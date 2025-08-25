@@ -4,7 +4,7 @@
 **Layer:** -1 (final hidden, monitor; train features = mean of last 3)  
 **Training tokens:** 4366 (positives: 203, 4.6% positive)  
 **Probe:** Logistic Regression (L2, class_weight=balanced)  
-**Train AUROC:** 1.000 | **Train AUPRC:** 1.000
+
 
 ## TL;DR
 I trained a tiny token-level probe on Qwen2.5-3B-Instruct’s hidden states to flag externalized uncertainty. On three fresh CoT traces, the monitor spikes right on hedging phrases (e.g., estimate / I’m not certain / it seems / might) and stays mostly flat during confident steps. The heatmaps darken exactly over those words.
